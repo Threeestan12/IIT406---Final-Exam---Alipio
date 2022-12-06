@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href = "Alipio_Home.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Nerko%20One">
+        <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Oswald">
+        <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Lato">  
+        <script src="Script.js"></script>
+</head>
+<body onload="initClock()">
+    
+
+</html>
+
+<header>
+        <!--Logo-->
+        <a href='home.html' style="display:Flex;">
+            <img src="Resource_Image/Coat_Of_Arms.png">
+            <img src="Resource_Image/Fun_Ph_Logo.png">
+        </a>
+        <!--Clock-->
+        <div class="datetime">
+            <div class="date">
+                <span id="month">Month</Span>,
+                <span id="daynum">00</Span>,
+                <span id="year">Year</Span>,
+                <span id="dayname">Day</Span>
+            </div>
+            <div class="time">
+                <span id="hour">00</Span>:
+                <span id="minute">00</Span>:
+                <span id="second">00</Span>&nbsp;
+                <span id="period">AM</Span>
+            </div>
+        </div>
+    </header>
+
+    
+<main>
+<div class="sidebarnav">
+    <center><p style="padding: 3px;" justify-content: "center;">⚙️ Sidebar Menu</p></center>
+    <button class="dropdown-btn"> About Philippines 
+        <i class="fa fa-caret-down" aria-hidden="true"></i>
+    </button>
+    <div class="dropdown-container">
+        <a href="#">History</a>
+        <a href="#">Geography and Environment</a>
+        <a href="#">Demographics</a>
+        <a href="#">Culture</a>
+    </div>
+    <button class="dropdown-btn"> Tourist Attraction 
+        <i class="fa fa-caret-down" aria-hidden="true"></i>
+    </button>
+    <div class="dropdown-container">
+        <a href="#">Luzon</a>
+        <a href="#">Visayas</a>
+        <a href="#">Mindanao</a>
+    </div>
+        <center><a href="VideoGallery.html"><i class="fa fa-fw fa-youtube-play"></i>&nbsp; Video Gallery</a>
+        <a href="Login.html"><i class="fa fa-user-circle" aria-hidden="true"></i>&nbsp; Login</a>
+        <a href="ContactUs.html"><i class="fa fa-envelope-open" aria-hidden="true"></i>&nbsp; Contact US</a></center>
+    
+    <!--A Modified built-in script for the uncollasable drop down menu (script is sourced to w3schools collasable sidebar)-->
+    <script>
+    var dropdown = document.getElementsByClassName("dropdown-btn");  var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+      });
+    }
+    </script>
+    </div>
+    <section>
+    <p><hello></p>
+    </section>
+</main>
+<footer>
+    <div class="footer_container">
+        <div class="footer_link">
+        <button class="menu-drop"> About Philippines <i class="fa fa-caret-down" aria-hidden="true"></i></button>
+        <div class="menu-drop-container">
+            <a href="#">History |</a>
+            <a href="#">Geography and Environment |</a>
+            <a href="#">Demographics | </a>
+            <a href="#">Culture </a>
+        </div>
+        <button class="menu-drop"> Tourist Attraction <i class="fa fa-caret-down" aria-hidden="true"></i></button>
+        <div class="menu-drop-container">
+            <a href="#">Luzon |</a>
+            <a href="#">Visayas |</a>
+            <a href="#">Mindanao |</a>
+        </div>
+        <center><a href="VideoGallery.html"><i class="fa fa-fw fa-youtube-play"></i>&nbsp; Video Gallery |</a>
+        <a href="Login.html"><i class="fa fa-user-circle" aria-hidden="true"></i>&nbsp; Login |</a>
+        <a href="ContactUs.html"><i class="fa fa-envelope-open" aria-hidden="true"></i>&nbsp; Contact US</a></center>
+        <script>
+            var dropdown = document.getElementsByClassName("menu-drop");  var i;
+
+            for (i = 0; i < dropdown.length; i++) {
+                dropdown[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var dropdownContent = this.nextElementSibling;
+                    if (dropdownContent.style.display === "block") 
+                    {
+                    dropdownContent.style.display = "none";
+                    } else 
+                    {
+                        dropdownContent.style.display = "block";
+                    }
+              });
+            }
+        </script>
+        </div>
+        <center><p> Copyright @ 2022. All Rights Reserved. </p></center>
+    </footer>
+</html>
